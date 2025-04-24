@@ -5,9 +5,9 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "",
+  title: "Harwood Constructions – Premium Home & Land Packages in Warragul",
   description:
-    "Discover world-class education and unlock your potential with our innovative learning programs.",
+    "Explore top-tier property deals with Harwood Constructions. Discover stylish homes, investment-ready packages, and unbeatable lifestyle amenities in Warragul, VIC.",
 };
 
 export default function RootLayout({

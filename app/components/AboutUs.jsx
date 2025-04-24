@@ -10,19 +10,19 @@ const AboutUs = () => {
   const propertyImages = [
     {
       src: "/images/openLiving.jpg",
-      title: "Open Living Space",
+      title: "Custom New Home",
     },
     {
       src: "/images/kitchecn.jpg",
-      title: "Modern Kitchen",
+      title: "Renovated Kitchen",
     },
     {
       src: "/images/bathroom.jpg",
-      title: "Luxurious Bathroom",
+      title: "Heritage Restoration",
     },
     {
       src: "/images/banner.jpg",
-      title: "Elegant Lawn",
+      title: "Commercial Project",
     },
   ];
 
@@ -46,26 +46,27 @@ const AboutUs = () => {
           transition={{ delay: 0.2, duration: 0.8 }}
           viewport={{ once: true }}
         >
-          At Real Estate Co., we are a distinguished luxury real estate firm,
-          masterfully curating an exquisite portfolio of properties. With over
-          three decades of expertise, our elite team of agents delivers bespoke
-          services, ensuring every client experiences the pinnacle of
-          sophistication and elegance in their property journey.
+          At Harwood Constructions, we turn your dream home into a reality with
+          trust, expertise, and a commitment to excellence. Our professional
+          team focuses on clear communication and building long-lasting
+          relationships, ensuring a seamless and successful experience every
+          step of the way. Choose us as your partner, and together, we'll exceed
+          expectations and create a home you’ll love.
         </motion.p>
 
         <div className="grid md:grid-cols-3 gap-10 mb-16">
           {[
             {
-              title: "Expertise",
-              desc: "Over 30 years of refined experience in the luxury market, guiding you with unmatched precision.",
+              title: "Your Trusted Partner",
+              desc: "Choose Harwood Constructions as your trusted, results-driven partner. We simplify the build process, delivering exceptional results that align with your vision while ensuring your success every step of the way.",
             },
             {
-              title: "Exclusivity",
-              desc: "Access to a curated selection of elite properties tailored to your luxurious lifestyle.",
+              title: "Personalized Support",
+              desc: "We truly care for our customers. Our dedicated team goes above and beyond, providing personalized support to exceed expectations and ensure your satisfaction. Your success is our success.",
             },
             {
-              title: "Service",
-              desc: "Personalized, world-class support from inception to completion of your dream estate.",
+              title: "Building Lasting Relationships",
+              desc: "Our commitment to excellence and clear communication fosters lasting partnerships. We work together to create a seamless, satisfying construction experience that builds trust and shared success.",
             },
           ].map((item, i) => (
             <motion.div
@@ -85,6 +86,78 @@ const AboutUs = () => {
         </div>
 
         <motion.div
+          className="max-w-4xl mx-auto bg-white/5 border border-white/10 p-8 rounded-xl mb-16"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.6, duration: 0.8 }}
+          viewport={{ once: true }}
+        >
+          <h3 className="text-2xl font-semibold text-white mb-4">
+            Why Choose Harwood Constructions?
+          </h3>
+          <ul className="grid md:grid-cols-2 gap-4 text-left text-white/80">
+            <li className="flex items-start gap-3">
+              <svg
+                className="w-5 h-5 mt-1 text-[#E8C050] flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clipRule="evenodd"
+                />
+              </svg>
+              <span>Homes designed to grow with you — not outgrow you</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <svg
+                className="w-5 h-5 mt-1 text-[#E8C050] flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clipRule="evenodd"
+                />
+              </svg>
+              <span>
+                Trusted, results-driven approach to bring your vision to life
+              </span>
+            </li>
+            <li className="flex items-start gap-3">
+              <svg
+                className="w-5 h-5 mt-1 text-[#E8C050] flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clipRule="evenodd"
+                />
+              </svg>
+              <span>Personalised support from a team that truly cares</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <svg
+                className="w-5 h-5 mt-1 text-[#E8C050] flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clipRule="evenodd"
+                />
+              </svg>
+              <span>Strong relationships built on trust and integrity</span>
+            </li>
+          </ul>
+        </motion.div>
+
+        <motion.div
           className="mt-16 relative"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -100,7 +173,7 @@ const AboutUs = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5 }}
-              key={activeImage} // This ensures animation when image changes
+              key={activeImage}
             >
               <Image
                 src={propertyImages[activeImage].src}
@@ -130,15 +203,38 @@ const AboutUs = () => {
                     >
                       {propertyImages[activeImage].title}
                     </motion.h3>
+                    <motion.p className="text-white/90 mb-6 max-w-md">
+                      {activeImage === 0 &&
+                        "Tailored to your lifestyle with premium finishes"}
+                      {activeImage === 1 &&
+                        "Modern functionality meets timeless design"}
+                      {activeImage === 2 &&
+                        "Preserving history with contemporary comforts"}
+                      {activeImage === 3 &&
+                        "Professional spaces built for business success"}
+                    </motion.p>
                     <motion.button
-                      className="flex items-center gap-2 px-6 py-3 w-fit mx-auto bg-[#201800] border border-white/40  text-white hover:bg-white/10 transition-all rounded-lg "
+                      className="flex items-center gap-2 px-6 py-3 w-fit mx-auto bg-[#201800] border border-white/40 text-white hover:bg-white/10 transition-all rounded-lg"
                       initial={{ opacity: 0, scale: 0.8 }}
                       animate={{ opacity: 1, scale: 1 }}
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
                       transition={{ duration: 0.3 }}
                     >
-                      Discover Our Legacy
+                      Explore Our Projects
+                      <svg
+                        className="w-4 h-4"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M14 5l7 7m0 0l-7 7m7-7H3"
+                        ></path>
+                      </svg>
                     </motion.button>
                   </div>
                 </>

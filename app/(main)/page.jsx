@@ -1,14 +1,14 @@
 "use client";
 import { motion } from "framer-motion";
 import AboutUs from "../components/AboutUs";
-import ServicesSection from "../components/OurServices";
 import TestimonialSection from "../components/Testimonial";
 import GetInTouch from "../components/ContactUs";
 import Footer from "../components/Footer";
 import OurWorks from "../components/OurWork";
 import Navbar from "../components/Navbar";
 import FloorPlan from "../components/FloorPlan";
-
+import LocationDetails from "../components/Location";
+import PropertyDealSection from "../components/Deals";
 export default function Home() {
   return (
     <div className="min-h-screen bg-[#6B7231] text-white font-sans">
@@ -48,8 +48,12 @@ export default function Home() {
         >
           <div className="text-center">
             <div className="overflow-hidden">
-              <div className="w-24 h-20 object-cover  absolute top-2 -right-10 ">
-                <img src="/images/Warragul-Logo.svg" alt="Luxury Real Estate" className="w-full h-full object-contain brightness-110" />
+              <div className="w-24 h-20 object-cover absolute top-2 left-1/2 transform -translate-x-1/2">
+                <img
+                  src="/images/Warragul-Logo.svg"
+                  alt="Luxury Real Estate"
+                  className="w-full h-full object-contain brightness-125"
+                />
               </div>
               <motion.h1
                 initial={{ y: "100%", opacity: 0 }}
@@ -58,7 +62,7 @@ export default function Home() {
                 className="text-5xl md:text-6xl font-bold text-white mb-6 tracking-tight leading-tight font-serif"
               >
                 <span className="block">Find Your Place</span>
-                <span className="block text-transparent bg-clip-text bg-gradient-to-r from-white to-white/80 ">
+                <span className="block text-transparent bg-clip-text bg-gradient-to-r from-white to-white/80 p-2 ">
                   of Elegance
                 </span>
               </motion.h1>
@@ -82,8 +86,7 @@ export default function Home() {
 
             {/* Brochure Download */}
             <motion.a
-              href="/images/brochures.pdf"
-              download="brochures.pdf"
+              href="#dowloadBrochure"
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.98 }}
               className="flex items-center gap-2 px-6 py-3 w-fit mx-auto bg-[#201800] border border-white/40  text-white hover:bg-white/10 transition-all rounded-lg "
@@ -127,11 +130,13 @@ export default function Home() {
       </main>
 
       <AboutUs />
-      <ServicesSection />
+      {/* <ServicesSection /> */}
+      <LocationDetails />
       <FloorPlan />
-      <OurWorks />
-      <TestimonialSection />
-      <GetInTouch />
+      <PropertyDealSection />
+      {/* <OurWorks /> */}
+      {/* <TestimonialSection /> */}
+      {/* <GetInTouch /> */}
       <Footer />
     </div>
   );
