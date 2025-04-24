@@ -13,8 +13,7 @@ export default function Navbar() {
     // { label: "Our Work", url: "#our-work" },
     { label: "Location", url: "#location" },
     // { label: "Contact Us", url: "#contact-us" },
-   { label: "Deals", url: "#deals" },
-
+    { label: "Deals", url: "#deals" },
   ];
 
   return (
@@ -29,9 +28,18 @@ export default function Navbar() {
           {/* Logo */}
           <motion.div
             whileHover={{ scale: 1.05 }}
-            className="text-2xl font-bold tracking-wide text-white"
+            className="text-2xl font-bold flex items-center gap-2 tracking-wide text-white "
           >
-            HARWOOD CONSTRUCTIONS
+            <div className="w-16 ">
+              <img
+                src="/images/logo.webp"
+                alt="Harwood"
+                className="w-full h-full object-contain"
+              />
+            </div>
+            <div className="text-sm">
+              HARWOOD CONSTRUCTION
+            </div>
           </motion.div>
 
           {/* Desktop Nav Links */}

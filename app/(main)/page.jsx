@@ -48,7 +48,7 @@ export default function Home() {
         >
           <div className="text-center">
             <div className="overflow-hidden">
-              <div className="w-24 h-20 object-cover absolute top-2 left-1/2 transform -translate-x-1/2">
+              <div className="w-40 h-20 object-cover absolute top-2 left-1/2 transform -translate-x-1/2">
                 <img
                   src="/images/Warragul-Logo.svg"
                   alt="Luxury Real Estate"
