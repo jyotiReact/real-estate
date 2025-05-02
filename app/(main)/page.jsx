@@ -9,7 +9,15 @@ import Navbar from "../components/Navbar";
 import FloorPlan from "../components/FloorPlan";
 import LocationDetails from "../components/Location";
 import PropertyDealSection from "../components/Deals";
+
 export default function Home() {
+  const scrollToBrochure = () => {
+    const brochureElement = document.getElementById("dowloadBrochure");
+    if (brochureElement) {
+      brochureElement.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="min-h-screen bg-[#6B7231] text-white font-sans">
       <main className="relative overflow-hidden">
@@ -83,13 +91,12 @@ export default function Home() {
               whileHover={{ y: -2 }}
               className="max-w-2xl mx-auto relative mb-16"
             ></motion.div>
-
             {/* Brochure Download */}
-            <motion.a
-              href="#dowloadBrochure"
+            <motion.button
+              onClick={scrollToBrochure}
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.98 }}
-              className="flex items-center gap-2 px-6 py-3 w-fit mx-auto bg-[#201800] border border-white/40  text-white hover:bg-white/10 transition-all rounded-lg "
+              className="flex items-center gap-2 px-6 py-3 w-fit mx-auto bg-[#201800] border border-white/40 text-white hover:bg-white/10 transition-all rounded-lg"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -106,7 +113,8 @@ export default function Home() {
                 />
               </svg>
               Download Brochure
-            </motion.a>
+            </motion.button>
+
           </div>
         </motion.div>
 

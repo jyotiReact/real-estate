@@ -13,7 +13,7 @@ export default function Navbar() {
     // { label: "Our Work", url: "#our-work" },
     { label: "Location", url: "#location" },
     // { label: "Contact Us", url: "#contact-us" },
-    { label: "Deals", url: "#deals" },
+    { label: "The Deals", url: "#deals" },
   ];
 
   return (
@@ -38,7 +38,7 @@ export default function Navbar() {
               />
             </div>
             <div className="text-sm">
-              HARWOOD CONSTRUCTION
+              HARWOOD CONSTRUCTIONS
             </div>
           </motion.div>
 

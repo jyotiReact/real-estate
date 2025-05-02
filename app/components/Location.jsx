@@ -58,8 +58,9 @@ const LocationSection = () => {
             </div>
           </motion.div>
 
-          {/* Location Highlights */}
-          <motion.div
+           {/* Location Highlights */}
+           <motion.div
+            id="dowloadBrochure"
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
@@ -225,8 +226,39 @@ const LocationSection = () => {
                 </div>
               </div>
             </div>
+
+            {/* View Brochure Button */}
+            <motion.button
+              onClick={() => setShowBrochureModal(true)}
+              className="flex-1 max-w-xs mx-auto flex items-center justify-center gap-2 px-6 py-3 bg-white border border-[#6B7231] text-[#6B7231] hover:bg-[#6B7231]/10 transition-colors rounded-lg"
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+            >
+              <svg
+                className="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                />
+              </svg>
+              View Brochure Now
+            </motion.button>
           </motion.div>
+          
         </div>
+        
 
         {/* Lot Details - Luxury Card */}
         <motion.div
@@ -266,7 +298,7 @@ const LocationSection = () => {
             </div>
 
             {/* Lot Details */}
-            <div className="md:w-2/3" id="dowloadBrochure">
+            <div className="md:w-2/3" >
               <h3 className="text-2xl font-serif text-[#201800] mb-4">
                 Lot Details
               </h3>
@@ -302,34 +334,7 @@ const LocationSection = () => {
           {/* Brochure Download */}
           <div className="mt-10 pt-6 border-t border-[#E8E1D5] text-center">
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              {/* View Brochure Button */}
-              <motion.button
-                onClick={() => setShowBrochureModal(true)}
-                className="flex-1 max-w-xs mx-auto flex items-center justify-center gap-2 px-6 py-3 bg-white border border-[#6B7231] text-[#6B7231] hover:bg-[#6B7231]/10 transition-colors rounded-lg"
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-              >
-                <svg
-                  className="w-5 h-5"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-                  />
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
-                  />
-                </svg>
-                View Brochure Online
-              </motion.button>
+              
 
               {/* Download Brochure Button */}
               <motion.a

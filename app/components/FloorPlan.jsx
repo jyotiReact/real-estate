@@ -64,11 +64,11 @@ const PlanSection = () => {
               </div>
               <ul className="space-y-4 text-[#FAF8F3]">
                 {[
-                  { label: "Total area", value: "386.26m²" },
-                  { label: "House area", value: "332.59m²" },
-                  { label: "Garage", value: "37.03m²" },
-                  { label: "Outdoor room", value: "12.1m²" },
-                  { label: "Portico", value: "4.43m²" },
+                  { label: "Total area", value: "512m²" },
+                  { label: "House area", value: "279.11m²" },
+                  { label: "Garage", value: "36.02m²" },
+                  { label: "Outdoor room", value: "17.45m²" },
+                  { label: "Portico", value: "6.65m²" },
                 ].map((item, index) => (
                   <li key={index} className="flex justify-between items-center">
                     <span className="text-[#EAE1D5]/90">{item.label}</span>

@@ -12,18 +12,18 @@ const AboutUs = () => {
       src: "/images/openLiving.jpg",
       title: "Custom New Home",
     },
-    {
-      src: "/images/kitchecn.jpg",
-      title: "Renovated Kitchen",
-    },
-    {
-      src: "/images/bathroom.jpg",
-      title: "Heritage Restoration",
-    },
-    {
-      src: "/images/banner.jpg",
-      title: "Commercial Project",
-    },
+    // {
+    //   src: "/images/kitchecn.jpg",
+    //   title: "Renovated Kitchen",
+    // },
+    // {
+    //   src: "/images/bathroom.jpg",
+    //   title: "Heritage Restoration",
+    // },
+    // {
+    //   src: "/images/banner.jpg",
+    //   title: "Commercial Project",
+    // },
   ];
 
   return (
@@ -220,6 +220,7 @@ const AboutUs = () => {
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
                       transition={{ duration: 0.3 }}
+                      onClick={() => window.open("https://www.realestate.com.au/home-builders/harwood-constructions-ERMGCM", "_blank")}
                     >
                       Explore Our Projects
                       <svg
