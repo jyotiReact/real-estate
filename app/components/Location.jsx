@@ -307,7 +307,7 @@ const LocationSection = () => {
                   <h4 className="text-sm uppercase tracking-wider text-[#6B7231] mb-1">
                     Land Size
                   </h4>
-                  <p className="text-lg text-[#201800]">Approx. 600m²</p>
+                  <p className="text-lg text-[#201800]">Approx. 512m²</p>
                 </div>
                 <div>
                   <h4 className="text-sm uppercase tracking-wider text-[#6B7231] mb-1">
