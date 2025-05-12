@@ -50,7 +50,7 @@ const LocationSection = () => {
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
         
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#201800]/30" />
+            {/* <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#201800]/30" /> */}
             <div className="absolute bottom-6 left-6 bg-white/90 p-4 rounded-lg shadow-lg max-w-xs">
               <h4 className="font-serif text-xl text-[#201800] mb-2">
                 6 Sierra Street
