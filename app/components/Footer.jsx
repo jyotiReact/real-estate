@@ -46,7 +46,7 @@ const Footer = () => {
         </p>
       </div> */}
       <p className="text-center text-sm font-semibold">
-        Developed & Maintained by <a className='underline' href='https://it-waves.com'>IT WAVES</a>
+        Developed & Maintained by <a className='underline' href='https://it-waves.com?utm_source=harwood_group'>IT WAVES</a>
       </p> 
     </footer>
   );
