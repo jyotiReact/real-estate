@@ -41,9 +41,9 @@ const LocationSection = () => {
             viewport={{ once: true }}
           >
             <iframe
-              src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=6%20Sierra%20Street%20%20Warragul%20VIC%203820+(Warragul%20Crownlead)&amp;t=h&amp;z=18&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-              width="600"
-              height="450"
+              src="https://maps.google.com/maps?hl=en&amp;q=6%20Sierra%20Street%20%20Warragul%20VIC%203820+(Warragul%20Crownlead)&amp;t=h&amp;z=18&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+              width="620"
+              height="510"
               style={{ border: 0}}  // Added blur effect here
               allowfullscreen=""
               loading="lazy"
