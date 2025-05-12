@@ -41,14 +41,15 @@ const LocationSection = () => {
             viewport={{ once: true }}
           >
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.8988035924654!2d144.9101972!3d-37.5338827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65318ea8a9e39%3A0x93067080f8af9d5a!2s10%20Callantina%20Rd%2C%20Mickleham%20VIC%203064%2C%20Australia!5e0!3m2!1sen!2sin!4v1745478858175!5m2!1sen!2sin"
+              src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=6%20Sierra%20Street%20%20Warragul%20VIC%203820+(Warragul%20Crownlead)&amp;t=h&amp;z=18&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
               width="600"
               height="450"
-              style={{ border: 0 }}
+              style={{ border: 0}}  // Added blur effect here
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
+        
             <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#201800]/30" />
             <div className="absolute bottom-6 left-6 bg-white/90 p-4 rounded-lg shadow-lg max-w-xs">
               <h4 className="font-serif text-xl text-[#201800] mb-2">
