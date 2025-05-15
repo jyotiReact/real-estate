@@ -3,7 +3,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="bg-[#201800] text-[#ffffff] py-16 px-6 font-serif">
+    <footer className="bg-[#96694d] text-[#ffffff] py-16 px-6 font-roboto">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 text-left">
         {/* Contact Us */}
         <div>
@@ -15,9 +15,9 @@ const Footer = () => {
             <a href="mailto:admin@harwoodgroup.au" className="underline">admin@harwoodgroup.au</a>
           </p>
           <div className="flex flex-wrap gap-4 text-sm opacity-80 mb-2">
-            <span className="underline cursor-pointer">Privacy Policy</span>
+            <a href='https://harwoodgroup.au/disclaimer/' target='_blank'><span className="underline cursor-pointer">Disclaimer</span></a>
             <span>|</span>
-            <span className="underline cursor-pointer">Terms of Use</span>
+            <a href='https://harwoodgroup.au/terms-conditions/' target='_blank'><span className="underline cursor-pointer">Terms of Use</span></a>
           </div>
           {/* <p className="text-sm opacity-80">Developed & Maintained by  <aIT WAVES</p> */}
         </div>
@@ -45,8 +45,8 @@ const Footer = () => {
           We pay our respects to their Elders both past and present. We acknowledge that their connection to Country is both ancient and ongoing.
         </p>
       </div> */}
-      <p className="text-center text-sm font-semibold">
-        Developed & Maintained by <a className='underline' href='https://it-waves.com?utm_source=harwood_group'>IT WAVES</a>
+      <p className="text-center text-sm mt-6 font-semibold">
+        Developed & Maintained by <a className='underline' href='https://it-waves.com?utm_source=harwood_group' target='_blank'>IT WAVES</a>
       </p> 
     </footer>
   );

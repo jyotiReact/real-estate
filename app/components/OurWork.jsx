@@ -23,7 +23,7 @@ const works = [
 
 const OurWorks = () => {
   return (
-    <section id='our-work' className="bg-[#6B7231] py-20 px-6 text-white">
+    <section id='our-work' className="bg-[#96694d] py-20 px-6 text-white">
       <div className="max-w-6xl mx-auto text-center mb-14">
         <motion.h2
           className="text-5xl font-serif font-bold mb-4"

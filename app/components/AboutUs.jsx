@@ -27,10 +27,10 @@ const AboutUs = () => {
   ];
 
   return (
-    <section id="about-us" className="bg-[#6B7231] text-white px-6 pb-20">
+    <section id="about-us" className="bg-[#96694d] text-white px-6 pb-20">
       <div className="max-w-7xl mx-auto text-center">
         <motion.h2
-          className="text-5xl font-serif mb-8 text-white"
+          className="text-5xl font-roboto mb-8 text-white"
           initial={{ opacity: 0, y: 0 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -182,13 +182,13 @@ const AboutUs = () => {
                 className="object-cover"
                 priority={activeImage === 0}
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#6B7231]/90 via-[#6B7231]/40 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#cdb1a1]/90 via-[#cdb1a1]/20 to-transparent" />
 
               {/* Hover Overlay */}
               {isHovered && (
                 <>
                   <motion.div
-                    className="absolute inset-0 z-10 bg-gradient-to-t from-[#6B7231]/90 via-[#6B7231]/40 to-transparent backdrop-blur-[2px]"
+                    className="absolute inset-0 z-10 bg-gradient-to-t from-[#cdb1a1]/90 via-[#cdb1a1]/20 to-transparent backdrop-blur-[2px]"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
@@ -214,7 +214,7 @@ const AboutUs = () => {
                         "Professional spaces built for business success"}
                     </motion.p>
                     <motion.button
-                      className="flex items-center gap-2 px-6 py-3 w-fit mx-auto bg-[#201800] border border-white/40 text-white hover:bg-white/10 transition-all rounded-lg"
+                      className="flex items-center gap-2 px-6 py-3 w-fit mx-auto bg-[#96694d] border  text-white hover:[#96694d]/80 transition-all rounded-lg"
                       initial={{ opacity: 0, scale: 0.8 }}
                       animate={{ opacity: 1, scale: 1 }}
                       whileHover={{ scale: 1.05 }}

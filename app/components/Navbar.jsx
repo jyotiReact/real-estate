@@ -21,7 +21,7 @@ export default function Navbar() {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className="bg-[#201800] border-b border-blue-900 shadow-md z-50 relative"
+      className="bg-[#96694d]  shadow-md z-50 relative"
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex justify-between h-24 items-center">
@@ -30,16 +30,21 @@ export default function Navbar() {
             whileHover={{ scale: 1.05 }}
             className="text-2xl font-bold flex items-center gap-2 tracking-wide text-white "
           >
-            <div className="w-16 ">
-              <img
+            <div className="w-30 ">
+              {/* <img
                 src="/images/logo.webp"
                 alt="Harwood"
                 className="w-full h-full object-contain"
-              />
+              /> */}
+               <img
+                  src="/images/Warragul-Logo.svg"
+                  alt="Luxury Real Estate"
+                  className="w-full h-full object-contain brightness-125"
+                />
             </div>
-            <div className="text-sm">
+            {/* <div className="text-sm">
               HARWOOD CONSTRUCTIONS
-            </div>
+            </div> */}
           </motion.div>
 
           {/* Desktop Nav Links */}

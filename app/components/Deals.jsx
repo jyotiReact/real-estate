@@ -44,7 +44,7 @@ const PropertyDetails = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl md:text-5xl font-serif text-[#201800] mb-4">
+          <h2 className="text-4xl md:text-5xl font-roboto text-[#201800] mb-4">
             Property Details
           </h2>
           <div className="w-24 h-1 bg-[#6B7231] mx-auto mb-6"></div>
@@ -57,7 +57,7 @@ const PropertyDetails = () => {
         {/* Price & ROI Badge */}
         <div className="flex flex-col md:flex-row  justify-center w-full items-center gap-6 mb-12">
           <motion.div
-            className="bg-[#6B7231] text-white px-8 py-4 rounded-lg shadow-lg"
+            className="bg-[#96694d] text-white px-8 py-4 rounded-lg shadow-lg"
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
@@ -68,7 +68,7 @@ const PropertyDetails = () => {
           </motion.div>
 
           <motion.div
-            className="bg-[#E8C050] text-[#201800] px-8 py-4 rounded-lg shadow-lg"
+            className="bg-[#cdb1a1] text-[#201800] px-8 py-4 rounded-lg shadow-lg"
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
@@ -82,18 +82,18 @@ const PropertyDetails = () => {
         </div>
 
         {/* Navigation Tabs */}
-        <div className="flex flex-wrap justify-center gap-2 mb-12 border-b border-[#E8E1D5]">
+        <div className="flex flex-wrap justify-center gap-2 mb-12 border-b border-[#96694d]">
           {["details", "floorplan", "siteplan", "renders"].map((tab) => (
             <button
               key={tab}
               onClick={() => setActiveTab(tab)}
               className={`px-6 py-3 capitalize font-medium transition-colors ${
                 activeTab === tab
-                  ? "text-[#6B7231] border-b-2 border-[#6B7231]"
-                  : "text-[#201800]/70 hover:text-[#6B7231]"
+                  ? "text-[#96694d] border-b-2 border-[#96694d]"
+                  : "text-[#96694d]/70 hover:text-[#96694d]"
               }`}
             >
-              {tab === "siteplan" ? "Site Plan" : tab}
+              {tab === "siteplan" ? "Site Plan" : tab === "floorplan" ? "Floor Plan" : tab}
             </button>
           ))}
         </div>
@@ -109,7 +109,7 @@ const PropertyDetails = () => {
               transition={{ duration: 0.5 }}
             >
               <div className="space-y-6">
-                <h3 className="text-2xl font-serif text-[#201800]">
+                <h3 className="text-2xl font-roboto text-[#201800]">
                   About the Property
                 </h3>
                 <p className="text-[#201800]/80 leading-relaxed">
@@ -123,7 +123,7 @@ const PropertyDetails = () => {
 
                 <div className="grid grid-cols-3 gap-4">
                   <div className="bg-[#F8F5EF] p-4 rounded-lg text-center">
-                    <p className="text-3xl font-bold text-[#6B7231]">
+                    <p className="text-3xl font-bold text-[#96694d]">
                       {property.bedrooms}
                     </p>
                     <p className="text-sm uppercase tracking-wider text-[#201800]/80">
@@ -131,7 +131,7 @@ const PropertyDetails = () => {
                     </p>
                   </div>
                   <div className="bg-[#F8F5EF] p-4 rounded-lg text-center">
-                    <p className="text-3xl font-bold text-[#6B7231]">
+                    <p className="text-3xl font-bold text-[#96694d]">
                       {property.bathrooms}
                     </p>
                     <p className="text-sm uppercase tracking-wider text-[#201800]/80">
@@ -139,7 +139,7 @@ const PropertyDetails = () => {
                     </p>
                   </div>
                   <div className="bg-[#F8F5EF] p-4 rounded-lg text-center">
-                    <p className="text-3xl font-bold text-[#6B7231]">
+                    <p className="text-3xl font-bold text-[#96694d]">
                       {property.garage}
                     </p>
                     <p className="text-sm uppercase tracking-wider text-[#201800]/80">
@@ -149,13 +149,13 @@ const PropertyDetails = () => {
                 </div>
 
                 <div className="space-y-4">
-                  <h4 className="font-serif text-xl text-[#201800]">
+                  <h4 className="font-roboto text-2xl text-[#201800]">
                     Features
                   </h4>
                   <ul className="grid grid-cols-1 md:grid-cols-2 gap-3 text-[#201800]/80">
                     <li className="flex items-center gap-2">
                       <svg
-                        className="w-5 h-5 text-[#6B7231]"
+                        className="w-5 h-5 text-[#96694d]"
                         fill="currentColor"
                         viewBox="0 0 20 20"
                       >
@@ -169,7 +169,7 @@ const PropertyDetails = () => {
                     </li>
                     <li className="flex items-center gap-2">
                       <svg
-                        className="w-5 h-5 text-[#6B7231]"
+                        className="w-5 h-5 text-[#96694d]"
                         fill="currentColor"
                         viewBox="0 0 20 20"
                       >
@@ -183,7 +183,7 @@ const PropertyDetails = () => {
                     </li>
                     <li className="flex items-center gap-2">
                       <svg
-                        className="w-5 h-5 text-[#6B7231]"
+                        className="w-5 h-5 text-[#96694d]"
                         fill="currentColor"
                         viewBox="0 0 20 20"
                       >
@@ -197,7 +197,7 @@ const PropertyDetails = () => {
                     </li>
                     <li className="flex items-center gap-2">
                       <svg
-                        className="w-5 h-5 text-[#6B7231]"
+                        className="w-5 h-5 text-[#96694d]"
                         fill="currentColor"
                         viewBox="0 0 20 20"
                       >
@@ -211,7 +211,7 @@ const PropertyDetails = () => {
                     </li>
                     <li className="flex items-center gap-2">
                       <svg
-                        className="w-5 h-5 text-[#6B7231]"
+                        className="w-5 h-5 text-[#96694d]"
                         fill="currentColor"
                         viewBox="0 0 20 20"
                       >
@@ -225,7 +225,7 @@ const PropertyDetails = () => {
                     </li>
                     <li className="flex items-center gap-2">
                       <svg
-                        className="w-5 h-5 text-[#6B7231]"
+                        className="w-5 h-5 text-[#96694d]"
                         fill="currentColor"
                         viewBox="0 0 20 20"
                       >
@@ -261,7 +261,7 @@ const PropertyDetails = () => {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5 }}
             >
-              <h3 className="text-2xl font-serif text-[#201800] mb-6">
+              <h3 className="text-2xl font-roboto text-[#201800] mb-6">
                 Floor Plan
               </h3>
               <div className="relative h-[600px] rounded-lg overflow-hidden border border-[#E8E1D5]">
@@ -286,12 +286,12 @@ const PropertyDetails = () => {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5 }}
             >
-              <h3 className="text-2xl font-serif text-[#201800] mb-6">
+              <h3 className="text-2xl font-roboto text-[#201800] mb-6">
                 Site Plan
               </h3>
               <div className="bg-white p-12 rounded-lg border border-[#E8E1D5]">
                 <p className="text-[#201800]/80">Site plan coming soon</p>
-                <p className="text-sm text-[#201800]/60 mt-4">
+                <p className="text-sm text-[#96694d]/90 mt-4">
                   Check back later for the detailed site layout
                 </p>
               </div>

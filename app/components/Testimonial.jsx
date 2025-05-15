@@ -78,7 +78,7 @@ const InfiniteSlider = ({ data, direction = 'left', duration = 40 }) => {
 
 const TestimonialSection = () => {
   return (
-    <section id='testimonial' className="bg-[#6B7231] py-20 px-1 overflow-hidden">
+    <section id='testimonial' className="bg-[#96694d] py-20 px-1 overflow-hidden">
       <div className=" mx-auto text-center">
         <motion.h2
           className="text-5xl font-serif mb-12 text-white"

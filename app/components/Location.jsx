@@ -15,10 +15,10 @@ const LocationSection = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl md:text-5xl font-serif text-[#201800] mb-4">
+          <h2 className="text-4xl md:text-5xl font-roboto text-[#201800] mb-4">
             Discover Life at Warragul
           </h2>
-          <div className="w-24 h-1 bg-[#6B7231] mx-auto mb-6"></div>
+          <div className="w-24 h-1 bg-[#96694d] mx-auto mb-6"></div>
           <p className="text-lg text-[#201800]/80 max-w-3xl mx-auto">
             Warragul Crown is a master-planned estate development nestled among
             lush green hills and distant mountain ranges, offering a peaceful
@@ -34,7 +34,7 @@ const LocationSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
           {/* Map Image Placeholder */}
           <motion.div
-            className="relative h-96 lg:h-[500px] rounded-xl overflow-hidden shadow-2xl border-4 border-white"
+            className="relative h-96 lg:h-[500px] rounded-xl overflow-hidden shadow-2xl border-2 border-white"
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
@@ -45,14 +45,14 @@ const LocationSection = () => {
               width="620"
               height="510"
               style={{ border: 0}}  // Added blur effect here
-              allowfullscreen=""
+              
               loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
+              referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
         
             {/* <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#201800]/30" /> */}
             <div className="absolute bottom-6 left-6 bg-white/90 p-4 rounded-lg shadow-lg max-w-xs">
-              <h4 className="font-serif text-xl text-[#201800] mb-2">
+              <h4 className="font-roboto text-xl text-[#201800] mb-2">
                 6 Sierra Street
               </h4>
               <p className="text-sm text-[#201800]/80">Warragul VIC 3820</p>
@@ -67,7 +67,7 @@ const LocationSection = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-3xl font-serif  text-[#201800] mb-6">
+            <h3 className="text-3xl font-roboto  text-[#201800] mb-6">
               Warragul Highlights
             </h3>
 
@@ -75,7 +75,7 @@ const LocationSection = () => {
               {/* Column 1 */}
               <div>
                 <div className="flex items-start gap-3 mb-4">
-                  <div className="bg-[#6B7231] p-2 rounded-full mt-1">
+                  <div className="bg-[#96694d] p-2 rounded-full mt-1">
                     <svg
                       className="w-4 h-4 text-white"
                       fill="currentColor"
@@ -100,7 +100,7 @@ const LocationSection = () => {
                 </div>
 
                 <div className="flex items-start gap-3 mb-4">
-                  <div className="bg-[#6B7231] p-2 rounded-full mt-1">
+                  <div className="bg-[#96694d] p-2 rounded-full mt-1">
                     <svg
                       className="w-4 h-4 text-white"
                       fill="currentColor"
@@ -124,7 +124,7 @@ const LocationSection = () => {
                 </div>
 
                 <div className="flex items-start gap-3 mb-4">
-                  <div className="bg-[#6B7231] p-2 rounded-full mt-1">
+                  <div className="bg-[#96694d] p-2 rounded-full mt-1">
                     <svg
                       className="w-4 h-4 text-white"
                       fill="currentColor"
@@ -154,7 +154,7 @@ const LocationSection = () => {
               {/* Column 2 */}
               <div>
                 <div className="flex items-start gap-3 mb-4">
-                  <div className="bg-[#6B7231] p-2 rounded-full mt-1">
+                  <div className="bg-[#96694d] p-2 rounded-full mt-1">
                     <svg
                       className="w-4 h-4 text-white"
                       fill="currentColor"
@@ -179,7 +179,7 @@ const LocationSection = () => {
                 </div>
 
                 <div className="flex items-start gap-3 mb-4">
-                  <div className="bg-[#6B7231] p-2 rounded-full mt-1">
+                  <div className="bg-[#96694d] p-2 rounded-full mt-1">
                     <svg
                       className="w-4 h-4 text-white"
                       fill="currentColor"
@@ -202,7 +202,7 @@ const LocationSection = () => {
                 </div>
 
                 <div className="flex items-start gap-3 mb-4">
-                  <div className="bg-[#6B7231] p-2 rounded-full mt-1">
+                  <div className="bg-[#96694d] p-2 rounded-full mt-1">
                     <svg
                       className="w-4 h-4 text-white"
                       fill="currentColor"
@@ -231,7 +231,7 @@ const LocationSection = () => {
             {/* View Brochure Button */}
             <motion.button
               onClick={() => setShowBrochureModal(true)}
-              className="flex-1 max-w-xs mx-auto flex items-center justify-center gap-2 px-6 py-3 bg-white border border-[#6B7231] text-[#6B7231] hover:bg-[#6B7231]/10 transition-colors rounded-lg"
+              className="flex-1 max-w-xs mx-auto flex items-center justify-center gap-2 px-6 py-3 bg-white border border-[#96694d] text-[#96694d] hover:bg-[#96694d]/10 transition-colors rounded-lg"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
             >
@@ -272,11 +272,11 @@ const LocationSection = () => {
           <div className="flex flex-col md:flex-row gap-8">
             {/* Address Section */}
             <div className="md:w-1/3 border-r border-[#E8E1D5] pr-6">
-              <h3 className="text-2xl font-serif text-[#201800] mb-4">
+              <h3 className="text-2xl font-roboto text-[#201800] mb-4">
                 Property Address
               </h3>
               <div className="flex items-start gap-3">
-                <div className="bg-[#6B7231] p-2 rounded-full">
+                <div className="bg-[#96694d] p-2 rounded-full">
                   <svg
                     className="w-5 h-5 text-white"
                     fill="currentColor"
@@ -300,30 +300,30 @@ const LocationSection = () => {
 
             {/* Lot Details */}
             <div className="md:w-2/3" >
-              <h3 className="text-2xl font-serif text-[#201800] mb-4">
+              <h3 className="text-2xl font-roboto text-[#201800] mb-4">
                 Lot Details
               </h3>
               <div className="grid sm:grid-cols-2 gap-6">
                 <div>
-                  <h4 className="text-sm uppercase tracking-wider text-[#6B7231] mb-1">
+                  <h4 className="text-sm uppercase tracking-wider text-[#96694d] mb-1">
                     Land Size
                   </h4>
                   <p className="text-lg text-[#201800]">Approx. 512m²</p>
                 </div>
                 <div>
-                  <h4 className="text-sm uppercase tracking-wider text-[#6B7231] mb-1">
+                  <h4 className="text-sm uppercase tracking-wider text-[#96694d] mb-1">
                     Orientation
                   </h4>
                   <p className="text-lg text-[#201800]">North-facing rear</p>
                 </div>
                 <div>
-                  <h4 className="text-sm uppercase tracking-wider text-[#6B7231] mb-1">
+                  <h4 className="text-sm uppercase tracking-wider text-[#96694d] mb-1">
                     Zoning
                   </h4>
                   <p className="text-lg text-[#201800]">Residential (GRZ)</p>
                 </div>
                 <div>
-                  <h4 className="text-sm uppercase tracking-wider text-[#6B7231] mb-1">
+                  <h4 className="text-sm uppercase tracking-wider text-[#96694d] mb-1">
                     Topography
                   </h4>
                   <p className="text-lg text-[#201800]">Gentle slope</p>
@@ -335,13 +335,12 @@ const LocationSection = () => {
           {/* Brochure Download */}
           <div className="mt-10 pt-6 border-t border-[#E8E1D5] text-center">
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              
-
+    
               {/* Download Brochure Button */}
               <motion.a
                 href="/images/brochures.pdf"
                 download
-                className="flex-1 max-w-xs mx-auto flex items-center justify-center gap-2 px-6 py-3 bg-[#6B7231] text-white hover:bg-[#201800] transition-colors rounded-lg"
+                className="flex-1 max-w-xs mx-auto flex items-center justify-center gap-2 px-6 py-3 bg-[#96694d] text-white hover:bg-[#96694d]/80 transition-colors rounded-lg"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
@@ -378,8 +377,8 @@ const LocationSection = () => {
               >
                 {/* Modal Header */}
                 <div className="flex justify-between items-center p-4 border-b border-[#E8E1D5]">
-                  <h3 className="text-xl font-serif text-[#201800]">
-                    Warragul Estate Brochure
+                  <h3 className="text-xl font-roboto text-[#201800]">
+                    Warragul Brochure
                   </h3>
                   <button
                     onClick={() => setShowBrochureModal(false)}
@@ -412,11 +411,11 @@ const LocationSection = () => {
                 </div>
 
                 {/* Modal Footer */}
-                <div className="p-4 border-t border-[#E8E1D5] flex justify-end">
+                <div className="p-4 border-t border-[#96694d] flex justify-end">
                   <motion.a
                     href="/images/brochures.pdf"
                     download
-                    className="flex items-center gap-2 px-6 py-2 bg-[#6B7231] text-white hover:bg-[#201800] transition-colors rounded-lg"
+                    className="flex items-center gap-2 px-6 py-2 bg-[#96694d] text-white hover:bg-[#96694d]/80 transition-colors rounded-lg"
                     whileHover={{ scale: 1.03 }}
                     whileTap={{ scale: 0.98 }}
                   >
