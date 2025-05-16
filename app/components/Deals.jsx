@@ -93,7 +93,7 @@ const PropertyDetails = () => {
                   : "text-[#96694d]/70 hover:text-[#96694d]"
               }`}
             >
-              {tab === "siteplan" ? "Site Plan" : tab === "floorplan" ? "Floor Plan" : tab}
+              {tab === "siteplan" ? "Site Plan" : tab === "floorplan" ? "Floor Plan" :  tab === "renders" ? "Gallery" : tab}
             </button>
           ))}
         </div>
@@ -266,13 +266,13 @@ const PropertyDetails = () => {
               </h3>
               <div className="relative h-[600px] rounded-lg overflow-hidden border border-[#E8E1D5]">
                 <Image
-                  src="/images/floorPlan-two.png"
+                  src="/images/floorplan.jpg"
                   alt="Property floorplan"
                   fill
                   className="object-contain p-6"
                 />
                 <div className="absolute bottom-4 right-4 bg-white/90 px-4 py-2 rounded-lg shadow-sm">
-                  <p className="text-sm text-[#201800]">Scale: 1:100</p>
+                  <p className="text-sm text-[#201800]"></p>
                 </div>
               </div>
             </motion.div>
@@ -281,7 +281,7 @@ const PropertyDetails = () => {
           {/* Site Plan Tab */}
           {activeTab === "siteplan" && (
             <motion.div
-              className="bg-[#F8F5EF] p-8 rounded-xl text-center"
+              className="bg-[#F8F5EF] p-8 rounded-xl "
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5 }}
@@ -289,11 +289,16 @@ const PropertyDetails = () => {
               <h3 className="text-2xl font-roboto text-[#201800] mb-6">
                 Site Plan
               </h3>
-              <div className="bg-white p-12 rounded-lg border border-[#E8E1D5]">
-                <p className="text-[#201800]/80">Site plan coming soon</p>
-                <p className="text-sm text-[#96694d]/90 mt-4">
-                  Check back later for the detailed site layout
-                </p>
+              <div className="relative h-[600px] rounded-lg overflow-hidden border border-[#E8E1D5]">
+                <Image
+                  src="/images/siteplan.png"
+                  alt="Property Site Plan"
+                  fill
+                  className="object-contain p-6"
+                />
+                <div className="absolute bottom-4 right-4 bg-white/90 px-4 py-2 rounded-lg shadow-sm">
+                  <p className="text-sm text-[#201800]">Site Plan</p>
+                </div>
               </div>
             </motion.div>
           )}

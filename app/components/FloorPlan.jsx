@@ -1,9 +1,11 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
 const PlanSection = () => {
+    const [isZoomed, setIsZoomed] = useState(false);
+
   return (
     <section className="bg-gradient-to-b from-[#EAE1D5] to-[#EAE1D5] py-20 px-6 relative overflow-hidden">
       {/* Decorative elements */}
@@ -22,16 +24,20 @@ const PlanSection = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ once: true }}
-          className="relative w-full h-[500px] rounded-xl overflow-hidden shadow-2xl group"
+          className="relative w-full h-[500px] rounded-xl overflow-hidden shadow-2xl group "
+            onClick={() => setIsZoomed(!isZoomed)} // Toggle zoom on click
         >
           <div className="absolute inset-0 border-4 border-[#EAE1D5] opacity-80 rounded-xl pointer-events-none z-10"></div>
           <div className="absolute inset-4 border border-[#c9b79c] rounded-md pointer-events-none z-10"></div>
 
           <Image
-            src="/images/floorPlan.png"
+            src="/images/floorplan.jpg"
             alt="Luxury Property Floor Plan"
             fill
-            className="object-cover transition-transform duration-700 group-hover:scale-105"
+            // className="object-contain transition-transform duration-700 group-hover:scale-105"
+            className={`object-contain transition-transform duration-700 ${isZoomed ? 'scale-150' : 'group-hover:scale-105'}`} // Apply zoom class
+          
+
             priority
           />
 
@@ -82,7 +88,7 @@ const PlanSection = () => {
           </div>
 
           <motion.a
-            href="/images/map.pdf"
+            href="/images/floorplan.jpg"
             download
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.98 }}
