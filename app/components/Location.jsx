@@ -15,7 +15,7 @@ const LocationSection = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl md:text-5xl font-roboto text-[#201800] mb-4">
+          <h2 className="text-4xl md:text-5xl font-mono text-[#201800] mb-4">
             Discover Life at Warragul
           </h2>
           <div className="w-24 h-1 bg-[#96694d] mx-auto mb-6"></div>
@@ -52,7 +52,7 @@ const LocationSection = () => {
         
             {/* <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#201800]/30" /> */}
             <div className="absolute bottom-6 left-6 bg-white/90 p-4 rounded-lg shadow-lg max-w-xs">
-              <h4 className="font-roboto text-xl text-[#201800] mb-2">
+              <h4 className="font-mono text-xl text-[#201800] mb-2">
                 6 Sierra Street
               </h4>
               <p className="text-sm text-[#201800]/80">Warragul VIC 3820</p>
@@ -67,7 +67,7 @@ const LocationSection = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-3xl font-roboto  text-[#201800] mb-6">
+            <h3 className="text-3xl font-mono  text-[#201800] mb-6">
               Warragul Highlights
             </h3>
 
@@ -272,7 +272,7 @@ const LocationSection = () => {
           <div className="flex flex-col md:flex-row gap-8">
             {/* Address Section */}
             <div className="md:w-1/3 border-r border-[#E8E1D5] pr-6">
-              <h3 className="text-2xl font-roboto text-[#201800] mb-4">
+              <h3 className="text-2xl font-mono text-[#201800] mb-4">
                 Property Address
               </h3>
               <div className="flex items-start gap-3">
@@ -300,7 +300,7 @@ const LocationSection = () => {
 
             {/* Lot Details */}
             <div className="md:w-2/3" >
-              <h3 className="text-2xl font-roboto text-[#201800] mb-4">
+              <h3 className="text-2xl font-mono text-[#201800] mb-4">
                 Lot Details
               </h3>
               <div className="grid sm:grid-cols-2 gap-6">
@@ -377,7 +377,7 @@ const LocationSection = () => {
               >
                 {/* Modal Header */}
                 <div className="flex justify-between items-center p-4 border-b border-[#E8E1D5]">
-                  <h3 className="text-xl font-roboto text-[#201800]">
+                  <h3 className="text-xl font-mono text-[#201800]">
                     Warragul Brochure
                   </h3>
                   <button

@@ -81,7 +81,7 @@ const TestimonialSection = () => {
     <section id='testimonial' className="bg-[#96694d] py-20 px-1 overflow-hidden">
       <div className=" mx-auto text-center">
         <motion.h2
-          className="text-5xl font-serif mb-12 text-white"
+          className="text-5xl font-mono mb-12 text-white"
           initial={{ opacity: 0, y: -40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}

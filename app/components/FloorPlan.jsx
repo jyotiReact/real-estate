@@ -9,7 +9,7 @@ const PlanSection = () => {
   return (
     <section className="bg-gradient-to-b from-[#EAE1D5] to-[#EAE1D5] py-20 px-6 relative overflow-hidden">
       {/* Decorative elements */}
-      <h2 className="text-4xl md:text-5xl font-roboto font-bold mb-8 leading-tight text-white text-center">
+      <h2 className="text-4xl md:text-5xl font-mono font-bold mb-8 leading-tight text-white text-center">
         <span className="text-[#96694d]">Exquisite</span> Architectural Masterpiece
       </h2>
       <div className="absolute top-0 left-0 w-full h-full opacity-10">
@@ -53,7 +53,7 @@ const PlanSection = () => {
           className="text-[#FAF8F3] flex flex-col items-center"
         >
 
-          <p className="text-[#96694d]/90 font-roboto font-bold text-xl mb-12 leading-relaxed">
+          <p className="text-[#96694d]/90 font-mono font-bold text-xl mb-12 leading-relaxed">
             Discover the epitome of refined living with our meticulously designed residence, where every detail reflects unparalleled craftsmanship.
           </p>
 
@@ -65,7 +65,7 @@ const PlanSection = () => {
             >
               <div className="flex items-center mb-5 pb-3 border-b border-[#EAE1D5]/30">
                 <div className="w-3 h-3 bg-[#EAE1D5] rounded-full mr-3"></div>
-                <h3 className="text-xl font-roboto font-semibold text-white">
+                <h3 className="text-xl font-mono font-semibold text-white">
                   Property Dimensions
                 </h3>
               </div>
@@ -92,7 +92,7 @@ const PlanSection = () => {
             download
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.98 }}
-            className="inline-flex items-center justify-center bg-[#96694d] text-[#ffffff] px-10 py-5 rounded-lg font-roboto font-semibold  transition-all duration-300 shadow-lg hover:shadow-xl"
+            className="inline-flex items-center justify-center bg-[#96694d] text-[#ffffff] px-10 py-5 rounded-lg font-mono font-semibold  transition-all duration-300 shadow-lg hover:shadow-xl"
           >
             <span>Download Exclusive Floor Plan</span>
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
@@ -114,7 +114,7 @@ export default PlanSection;
             >
               <div className="flex items-center mb-5 pb-3 border-b border-[#EAE1D5]/30">
                 <div className="w-3 h-3 bg-[#EAE1D5] rounded-full mr-3"></div>
-                <h3 className="text-xl font-serif font-semibold text-[#EAE1D5]">
+                <h3 className="text-xl font-mono font-semibold text-[#EAE1D5]">
                   Floor Plan Details
                 </h3>
               </div>

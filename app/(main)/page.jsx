@@ -19,7 +19,7 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-[#96694d] text-white font-roboto">
+    <div className="min-h-screen bg-[#96694d] text-white font-mono">
       <main className="relative overflow-hidden">
         <Navbar />
 
@@ -72,9 +72,9 @@ export default function Home() {
                 initial={{ y: "100%", opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-                className="text-5xl md:text-6xl font-bold text-white mb-6 tracking-tight leading-tight font-roboto"
+                className="text-5xl md:text-6xl font-bold text-white mb-6 tracking-tight leading-tight font-mono"
               >
-                <span className="block font-roboto">Find Your Place</span>
+                <span className="block font-mono">Find Your Place</span>
                 <span className="block text-transparent bg-clip-text bg-gradient-to-r from-white to-white/80 p-2 ">
                   of Elegance
                 </span>
@@ -85,7 +85,7 @@ export default function Home() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.4, duration: 1 }}
-              className="max-w-2xl mx-auto text-white/90 text-lg mb-12 font-medium font-roboto tracking-wide"
+              className="max-w-2xl mx-auto text-white/90 text-lg mb-12 font-medium font-mono tracking-wide"
             >
               Discover exceptional properties that match your distinguished
               lifestyle
@@ -133,7 +133,7 @@ export default function Home() {
           <motion.div
             animate={{ x: ["0%", "-100%"] }}
             transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
-            className="whitespace-nowrap text-white/90 text-2xl font-roboto tracking-widest"
+            className="whitespace-nowrap text-white/90 text-2xl font-mono tracking-widest"
           >
             LUXURY · ELEGANCE · PRESTIGE · EXCLUSIVE · REFINEMENT ·
             SOPHISTICATION · LUXURY · ELEGANCE · PRESTIGE · EXCLUSIVE ·

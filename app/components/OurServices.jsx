@@ -48,7 +48,7 @@ const OurServices = () => {
         transition={{ duration: 0.8, ease: "easeOut" }}
         viewport={{ once: true }}
       >
-        <h2 className="text-4xl md:text-5xl font-serif font-bold text-[#201800] mb-4">
+        <h2 className="text-4xl md:text-5xl font-mono font-bold text-[#201800] mb-4">
           Services That Define Distinction
         </h2>
         <p className="text-[#0B1F3A]/70 text-lg md:text-xl max-w-2xl mx-auto">

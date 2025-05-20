@@ -30,7 +30,7 @@ const AboutUs = () => {
     <section id="about-us" className="bg-[#96694d] text-white px-6 pb-20">
       <div className="max-w-7xl mx-auto text-center">
         <motion.h2
-          className="text-5xl font-roboto mb-8 text-white"
+          className="text-5xl font-mono mb-8 text-white"
           initial={{ opacity: 0, y: 0 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -196,7 +196,7 @@ const AboutUs = () => {
                   />
                   <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center px-4">
                     <motion.h3
-                      className="text-3xl md:text-4xl font-serif text-white mb-4"
+                      className="text-3xl md:text-4xl font-mono text-white mb-4"
                       initial={{ opacity: 0, y: 10 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.6 }}

@@ -44,7 +44,7 @@ const PropertyDetails = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl md:text-5xl font-roboto text-[#201800] mb-4">
+          <h2 className="text-4xl md:text-5xl font-mono text-[#201800] mb-4">
             Property Details
           </h2>
           <div className="w-24 h-1 bg-[#6B7231] mx-auto mb-6"></div>
@@ -109,7 +109,7 @@ const PropertyDetails = () => {
               transition={{ duration: 0.5 }}
             >
               <div className="space-y-6">
-                <h3 className="text-2xl font-roboto text-[#201800]">
+                <h3 className="text-2xl font-mono text-[#201800]">
                   About the Property
                 </h3>
                 <p className="text-[#201800]/80 leading-relaxed">
@@ -149,7 +149,7 @@ const PropertyDetails = () => {
                 </div>
 
                 <div className="space-y-4">
-                  <h4 className="font-roboto text-2xl text-[#201800]">
+                  <h4 className="font-mono text-2xl text-[#201800]">
                     Features
                   </h4>
                   <ul className="grid grid-cols-1 md:grid-cols-2 gap-3 text-[#201800]/80">
@@ -261,7 +261,7 @@ const PropertyDetails = () => {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5 }}
             >
-              <h3 className="text-2xl font-roboto text-[#201800] mb-6">
+              <h3 className="text-2xl font-mono text-[#201800] mb-6">
                 Floor Plan
               </h3>
               <div className="relative h-[600px] rounded-lg overflow-hidden border border-[#E8E1D5]">
@@ -286,7 +286,7 @@ const PropertyDetails = () => {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5 }}
             >
-              <h3 className="text-2xl font-roboto text-[#201800] mb-6">
+              <h3 className="text-2xl font-mono text-[#201800] mb-6">
                 Site Plan
               </h3>
               <div className="relative h-[600px] rounded-lg overflow-hidden border border-[#E8E1D5]">

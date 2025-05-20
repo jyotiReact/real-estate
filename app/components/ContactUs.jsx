@@ -13,7 +13,7 @@ const GetInTouch = () => {
 
       <div className="max-w-4xl mx-auto text-center relative z-20">
         <motion.h2
-          className="text-5xl font-serif text-white mb-6 leading-tight"
+          className="text-5xl font-mono text-white mb-6 leading-tight"
           initial={{ opacity: 0, y: -40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
