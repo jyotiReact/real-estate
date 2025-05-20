@@ -185,10 +185,10 @@ const AboutUs = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-[#cdb1a1]/90 via-[#cdb1a1]/20 to-transparent" />
 
               {/* Hover Overlay */}
-              {isHovered && (
+              {/* {isHovered && ( */}
                 <>
                   <motion.div
-                    className="absolute inset-0 z-10 bg-gradient-to-t from-[#cdb1a1]/90 via-[#cdb1a1]/20 to-transparent backdrop-blur-[2px]"
+                    className="absolute inset-0 z-10 bg-gradient-to-t from-[#cdb1a1]/80 via-[#cdb1a1]/10 to-transparent "
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
@@ -196,14 +196,14 @@ const AboutUs = () => {
                   />
                   <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center px-4">
                     <motion.h3
-                      className="text-3xl md:text-4xl font-mono text-white mb-4"
+                      className="text-3xl  md:text-4xl font-mono text-white mb-4"
                       initial={{ opacity: 0, y: 10 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.6 }}
                     >
                       {propertyImages[activeImage].title}
                     </motion.h3>
-                    <motion.p className="text-white/90 mb-6 max-w-md">
+                    <motion.p className="text-white font-bold mb-6 max-w-md">
                       {activeImage === 0 &&
                         "Tailored to your lifestyle with premium finishes"}
                       {activeImage === 1 &&
@@ -239,7 +239,7 @@ const AboutUs = () => {
                     </motion.button>
                   </div>
                 </>
-              )}
+              {/* )} */}
             </motion.div>
 
             {/* Thumbnail Navigation */}
